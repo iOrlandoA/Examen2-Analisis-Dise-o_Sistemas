@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package examen2;
 
 import java.time.LocalDateTime;
@@ -41,14 +37,14 @@ public class Aguinaldo {
     public static void main(String[] args) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
-        LocalDateTime startDate = LocalDateTime.parse("2022-01-09 10:30" , formatter);
-        LocalDateTime endDate = LocalDateTime.parse("2023-03-09 10:30", formatter);
+        LocalDateTime startDate = LocalDateTime.parse("2022-12-30 10:30" , formatter);
+        LocalDateTime endDate = LocalDateTime.parse("2024-06-01 10:30", formatter);
         
         float amount = 1000000;
         float a = 0;
         a = findbonus(startDate,endDate,amount );
         
-         System.out.println(a);
+        System.out.println(a);
         
     }
     
